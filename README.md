@@ -14,43 +14,36 @@ import wikipediaapi
 ### Create an Object of wikipediaapi()
 ```
 wiki_wiki = wikipediaapi.Wikipedia(language='en', extract_format=wikipediaapi.ExtractFormat.WIKI)
-
 ```
 
 ### Create a list of wikipedia pages
 ```
 wiki = ["Genetic algorithm", "A* search algorithm", "Search tree", "Recursion (computer science)", "Linear search"]
-
 ```
 
 ### Create an Object of FPTree()
 ```
 test = FPTree()
-
 ```
 
 ### Extract page data from FPTree()
 ```
 data = test.getData(wiki)
-
 ```
 
 ### Create FPtree and HeaderTable from FPTree()
 ```
 FPtree, HeaderTable = test.makeTree(data)
-
 ```
 
 ### Create a list to store frequent item set
 ```
 frequent_itemset = []
-
 ```
 
 ### Mine FPTree()
 ```
 test.mine(FPtree, HeaderTable, 5, set([]), frequent_itemset)
-
 ```
 
 ### View frequent item set list and display tree
